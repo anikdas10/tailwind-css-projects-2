@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer{
+    section{
+        @apply pt-16 pb-4 md:pt-20;
+    }
+}
+@layer utilities{
+    .home_title{
+        @apply text-4xl font-bold uppercase lg:text-6xl;
+    }
+    .seperator{
+        @apply w-28 h-[2px] bg-secondarycolor my-5;
+    }
+    .paragraph{
+        @apply text-pragraphcolor text-xs leading-5;
+    }
+}
+.tabs-wrap ul li:hover,
+.tabs-wrap ul li.active{
+    @apply bg-secondarycolor text-black;
+} 
